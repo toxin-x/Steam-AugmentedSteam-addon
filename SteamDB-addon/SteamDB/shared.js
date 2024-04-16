@@ -1,5 +1,5 @@
 export function getCdn(url) {
-    return "https://cdn.jsdelivr.net/gh/SteamDatabase/BrowserExtension@latest/" + url;
+    return "https://cdn.jsdelivr.net/gh/IsThereAnyDeal/AugmentedSteam@latest/" + url;
 }
 
 export function getSteamLoopBackHost(url) {
