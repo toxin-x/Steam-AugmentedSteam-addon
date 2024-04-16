@@ -1,4 +1,4 @@
-let cdn = "https://cdn.jsdelivr.net/gh/SteamDatabase/BrowserExtension@latest/"
+let cdn = "https://cdn.jsdelivr.net/gh/IsThereAnyDeal/AugmentedSteam@latest/"
 
 browser = {};
 browser.storage = {};
