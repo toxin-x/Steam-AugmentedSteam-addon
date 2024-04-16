@@ -9,17 +9,17 @@ browser.storage.sync.get = async function (items) {
     return items;
 }
 
-browser.i18n = {};
-const langKey = "steamDB_en";
-async function getLang() {
-    if (sessionStorage.getItem(langKey) === null) {
-        console.log('[SteamDB addon] getting EN lang');
+// browser.i18n = {};
+// const langKey = "steamDB_en";
+// async function getLang() {
+//     if (sessionStorage.getItem(langKey) === null) {
+//         console.log('[SteamDB addon] getting EN lang');
 
-        const response = await fetch(cdn + "_locales/en/messages.json");
-        sessionStorage.setItem(langKey, JSON.stringify(await response.json()));
-    }
-}
-getLang();
+//         const response = await fetch(cdn + "_locales/en/messages.json");
+//         sessionStorage.setItem(langKey, JSON.stringify(await response.json()));
+//     }
+// }
+// getLang();
 
 browser.i18n.getMessage = function (messageKey, substitutions) {
     if (!Array.isArray(substitutions)) {
